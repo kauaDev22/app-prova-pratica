@@ -1,4 +1,3 @@
-# Python
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -9,7 +8,7 @@ def read_root():
 
 @app.get("/square/{x}")
 def square(x: int):
-    return {"result": x + x}
+    return {"result": x * x}
 
 @app.get("/double/{x}")
 def double(x: int):
